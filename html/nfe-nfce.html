@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Listas de diversos itens da NFe / NFce </title>
+    </head>
+    <body>
+
+        <!-- mod -->
+        <option value="55"> 55 = NF-e </option>
+        <option value="65"> 65 = NFC-e </option>
+
+        <!-- idDest -->
+        <option value="1"> Operação Interna </option>
+        <option value="2"> Operação Interestadual </option>
+        <option value="3"> Operação com Exterior </option>
+
+        <!-- tpImp -->
+        <option value="0"> Sem geração de DANFE </option>
+        <option value="1"> DANFE normal, Retrato </option>
+        <option value="2"> DANFE normal, Paisagem </option>
+        <option value="3"> DANFE Simplificado </option>
+        <option value="4"> DANFE NFC-e </option>
+        <option value="5"> DANFE NFC-e em mensagem eletrônica (o envio de mensagem eletrônica pode ser feita de forma simultânea com a impressão do DANFE; usar o tpImp=5 quando esta for a única forma de disponibilização do DANFE) </option>
+
+        <!-- tpEmis -->
+        <option value="1"> 1 - Emissão normal </option>
+        <option value="2"> 2 - Contingência FS-IA </option>
+        <option value="3"> 3 - Contingência SCAN </option>
+        <option value="4"> 4 - Contingência DPEC </option>
+        <option value="5"> 5 - Contingência FS-DA </option>
+        <option value="6"> 6 - Contingência SVC-AN </option>
+        <option value="7"> 7 - Contingência SVC-RS </option>
+
+        <!-- tpAmb -->
+        <option value="1"> 1 - Produção </option>
+        <option value="2"> 2 - Homologação </option>
+
+        <!-- finNFe -->
+        <option value="1"> NF-e normal </option>
+        <option value="2"> NF-e complementar </option>
+        <option value="3"> NF-e de ajuste </option>
+        <option value="4"> Devolução de mercadoria </option>
+
+        <!-- indFinal -->
+        <option value="0"> Normal </option>
+        <option value="1"> Consumidor Final </option>
+
+        <!-- indPres -->
+        <option value="0"> Não se aplica </option>
+        <option value="1"> Operação presencial </option>
+        <option value="2"> Operação não presencial, pela Internet </option>
+        <option value="3"> Operação não presencial, Teleatendimento </option>
+        <option value="4"> NFC-e em operação com entrega a domicílio </option>
+        <option value="9"> Operação não presencial, outros </option>
+
+        <!-- procEmi -->
+        <option value="0"> Emissão de NF-e com aplicativo do contribuinte </option>
+        <option value="1"> Emissão de NF-e avulsa pelo Fisco </option>
+        <option value="2"> Emissão de NF-e avulsa, pelo contribuinte com seu certificado digital, através do site do Fisco </option>
+        <option value="3"> Emissão NF-e pelo contribuinte com aplicativo fornecido pelo Fisco. </option>
+
+        <!-- CRT -->
+        <option value="1"> 1 - Simples Nacional </option>
+        <option value="2"> 2 - Simples Nacional, excesso sublimite de receita bruta </option>
+        <option value="3"> 3 - Regime Normal </option>
+
+        <!-- indIEDest -->
+        <option value="1"> Contribuinte ICMS (informar a IE do destinatário) </option>
+        <option value="2"> Contribuinte isento de Inscrição no cadastro de Contribuintes </option>
+
+        <!-- modFrete -->
+        <option value="0"> 0 - Contratação do Frete por conta do Remetente (CIF) </option>
+        <option value="1"> 1 - Contratação do Frete por conta do Destinatário (FOB) </option>
+        <option value="2"> 2 - Contratação do Frete por conta de Terceiros </option>
+        <option value="3"> 3 - Transporte Próprio por conta do Remetente </option>
+        <option value="4"> 4 - Transporte Próprio por conta do Destinatário </option>
+        <option value="9"> 9 - Sem Ocorrência de Transporte </option>
+
+        <!-- indPag -->
+        <option value="0"> Pagamento à vista </option>
+        <option value="1"> Pagamento a prazo </option>
+
+        <!-- tPag -->
+        <option value="01"> Dinheiro </option>
+        <option value="02"> Cheque </option>
+        <option value="03"> Cartão de Crédito </option>
+        <option value="04"> Cartão de Débito </option>
+        <option value="05"> Crédito Loja </option>
+        <option value="10"> Vale Alimentação </option>
+        <option value="11"> Vale Refeição </option>
+        <option value="12"> Vale Presente </option>
+        <option value="13"> Vale Combustível </option>
+        <option value="15"> Boleto Bancário </option>
+        <option value="90"> Sem Pagamento </option>
+        <option value="99">Outros </option>
+
+        <!-- tpIntegra -->
+        <option value="1"> Pagamento integrado com o sistema de automação da empresa (Ex.: equipamento TEF, Comércio Eletrônico) </option>
+        <option value="2"> Pagamento não integrado com o sistema de automação da empresa  (Ex.: equipamento POS) </option>
+
+        <!-- tBand -->
+        <option value="01"> Visa </option>
+        <option value="02"> Mastercard </option>
+        <option value="03"> American Express </option>
+        <option value="04"> Sorocred </option>
+        <option value="05"> Diners Club </option>
+        <option value="06"> Elo </option>
+        <option value="07"> Hipercard </option>
+        <option value="08"> Aura </option>
+        <option value="09"> Cabal </option>
+        <option value="99"> Outros </option>
+
+        <!-- cRegTrib -->
+        <option value="1"> Microempresa Municipal </option>
+        <option value="2"> Estimativa </option>
+        <option value="3"> Sociedade de Profissionais </option>
+        <option value="4"> Cooperativa </option>
+        <option value="5"> Microempresário Individual (MEI) </option>
+        <option value="6"> Microempresário e Empresa de Pequeno Porte (ME/EPP) </option>
+
+        <!-- indEscala -->
+        <option value="N"> N - Produzido em Escala NÃO Relevante </option>
+        <option value="S"> S - Produzido em Escala Relevante </option>
+
+        <!-- indTot -->
+        <option value="1"> 1 - O Valor do Item compõe o valor total da NF-e </option>
+        <option value="0"> 0 - O Valor do Item não compõe o valor total da NF-e </option>
+
+        <!-- CST -->
+        <option value="00"> 00 - Tributada integralmente </option>
+        <option value="10"> 10 - Tributada e com cobrança do ICMS por substituição tributária </option>
+        <option value="20"> 20 - Com redução de base de cálculo </option>
+        <option value="30"> 30 - Isenta ou não tributada e com cobrança do ICMS por substituição tributária </option>
+        <option value="40"> 40 - Isenta </option>
+        <option value="41"> 41 - Não tributada </option>
+        <option value="50"> 50 - Suspensão </option>
+        <option value="51"> 51 - Diferimento </option>
+        <option value="60"> 60 - ICMS cobrado anteriormente por substituição tributária </option>
+        <option value="70"> 70 - Com redução de base de cálculo e cobrança do ICMS por substituição tributária </option>
+        <option value="90"> 90 - Outros </option>
+        <option value="P10"> P10 - ICMSPart com CST = 10 </option>
+        <option value="P90"> P90 - ICMSPart com CST = 90 </option>
+        <option value="S41"> S41 - ICMSST para CST = 41 </option>
+        <option value="S60"> S60 - ICMSST para CST = 60 </option>
+
+        <!-- CSOSN -->
+        <option value="101"> 101 - Tributada pelo Simples Nacional com permissão de crédito </option>
+        <option value="102"> 102 - Tributada pelo Simples Nacional sem permissão de crédito </option>
+        <option value="103"> 103 - Isenção do ICMS no Simples Nacional para faixa de receita bruta </option>
+        <option value="201"> 201 - Tributada pelo Simples Nacional com permissão de crédito e com cobrança do ICMS por substituição tributária </option>
+        <option value="202"> 202 - Tributada pelo Simples Nacional sem permissão de crédito e com cobrança do ICMS por substituição tributária </option>
+        <option value="203"> 203 - Isenção do ICMS no Simples Nacional para faixa de receita bruta e com cobrança do ICMS por substituição tributária </option>
+        <option value="300"> 300 - Imune </option>
+        <option value="400"> 400 - Não tributada pelo Simples Nacional </option>
+        <option value="500"> 500 - ICMS cobrado anteriormente por substituição tributária (substituído) ou por antecipação </option>
+        <option value="900"> 900 - Outros </option>
+
+        <!-- orig -->
+        <option value="0"> 0 - Nacional, exceto as indicadas nos códigos 3, 4, 5 e 8 </option>
+        <option value="1"> 1 - Estrangeira - Importação direta, exceto a indicada no código 6 </option>
+        <option value="2"> 2 - Estrangeira - Adquirida no mercado interno, exceto a indicada no código 7 </option>
+        <option value="3"> 3 - Nacional, mercadoria ou bem com Conteúdo de Importação superior a 40% e inferior ou igual a 70% </option>
+        <option value="4"> 4 - Nacional, cuja produção tenha sido feita em conformidade com os processos produtivos básicos de que tratam as legislações citadas nos Ajustes </option>
+        <option value="5"> 5 - Nacional, mercadoria ou bem com Conteúdo de Importação inferior ou igual a 40% </option>
+        <option value="6"> 6 - Estrangeira - Importação direta, sem similar nacional, constante em lista da CAMEX e gás natural </option>
+        <option value="7"> 7 - Estrangeira - Adquirida no mercado interno, sem similar nacional, constante em lista da CAMEX e gás natural </option>
+        <option value="8"> 8 - Nacional, mercadoria ou bem com Conteúdo de Importação superior a 70% </option>
+
+        <!-- modBC -->
+        <option value="0"> 0 - Margem Valor Agregado (%) </option>
+        <option value="1"> 1 - Pauta (valor) </option>
+        <option value="2"> 2 - Preço Tabelado Máximo (valor) </option>
+        <option value="3"> 3 - Valor da Operação </option>
+
+        <!-- motDesICMS -->
+        <option value="1"> 1 - Táxi </option>
+        <option value="2"> 2 - Deficiente Físico </option>
+        <option value="3"> 3 - Produtor Agropecuário </option>
+        <option value="4"> 4 - Frotista/Locadora </option>
+        <option value="5"> 5 - Diplomático/Consular </option>
+        <option value="6"> 6 - Utilitários e Motocicletas da Amazônia Ocidental e Áreas de Livre Comércio (Resolução 714/88 e 790/94 - CONTRAN e suas alterações) </option>
+        <option value="7"> 7 - SUFRAMA </option>
+        <option value="8"> 8 – Venda a Órgãos Públicos </option>
+        <option value="9"> 9 - Outros </option>
+        <option value="10"> 10- Deficiente Condutor </option>
+        <option value="11"> 11- Deficiente não condutor </option>
+        <option value="16"> 16 - Olimpíadas Rio 2016 </option>
+        <option value="90"> 90 - Solicitação do Fisco </option>
+
+        <!-- modBCST -->
+        <option value="0"> 0 - Preço tabelado ou máximo sugerido </option>
+        <option value="1"> 1 - Lista Negativa (valor) </option>
+        <option value="2"> 2 - Lista Positiva (valor) </option>
+        <option value="3"> 3 - Lista Neutra (valor) </option>
+        <option value="4"> 4 - Margem Valor Agregado (%) </option>
+        <option value="5"> 5 - Pauta (valor) </option>
+
+        <!-- IPI CST -->
+        <option value="00"> 00 - Entrada com recuperação de crédito </option>
+        <option value="01"> 01 - Entrada tributada com alíquota zero </option>
+        <option value="02"> 02 - Entrada isenta </option>
+        <option value="03"> 03 - Entrada não-tributada </option>
+        <option value="04"> 04 - Entrada imune </option>
+        <option value="05"> 05 - Entrada com suspensão </option>
+        <option value="49"> 49 - Outras entradas </option>
+        <option value="50"> 50 - Saída tributada </option>
+        <option value="51"> 51 - Saída tributada com alíquota zero </option>
+        <option value="52"> 52 - Saída isenta </option>
+        <option value="53"> 53 - Saída não-tributada </option>
+        <option value="54"> 54 - Saída imune </option>
+        <option value="55"> 55 - Saída com suspensão </option>
+        <option value="99"> 99 - Outras saídas </option>
+
+        <!-- PIS / COFINS CST -->
+        <option value="01"> 01 - Operação Tributável (base de cálculo = valor da operação alíquota normal (cumulativo / não cumulativo)) </option>
+        <option value="02"> 02 - Operação Tributável (base de cálculo = valor da operação (alíquota diferenciada)) </option>
+        <option value="03"> 03 - Operação Tributável (base de cálculo = quantidade vendida x alíquota por unidade de produto) </option>
+        <option value="04"> 04 - Operação Tributável (tributação monofásica (alíquota zero)) </option>
+        <option value="05"> 05 - Operação Tributável (Substituição Tributária) </option>
+        <option value="06"> 06 - Operação Tributável (alíquota zero) </option>
+        <option value="07"> 07 - Operação Isenta da Contribuição </option>
+        <option value="08"> 08 - Operação Sem Incidência da Contribuição </option>
+        <option value="09"> 09 - Operação com Suspensão da Contribuição </option>
+        <option value="49"> 49 = Outras Operações de Saída </option>
+        <option value="50"> 50 = Operação com Direito a Crédito - Vinculada Exclusivamente a Receita Tributada no Mercado Interno </option>
+        <option value="51"> 51 = Operação com Direito a Crédito - Vinculada Exclusivamente a Receita Não Tributada no Mercado Interno </option>
+        <option value="52"> 52 = Operação com Direito a Crédito – Vinculada Exclusivamente a Receita de Exportação </option>
+        <option value="53"> 53 = Operação com Direito a Crédito - Vinculada a Receitas Tributadas e Não-Tributadas no Mercado Interno </option>
+        <option value="54"> 54 = Operação com Direito a Crédito - Vinculada a Receitas Tributadas no Mercado Interno e de Exportação </option>
+        <option value="55"> 55 = Operação com Direito a Crédito - Vinculada a Receitas Não-Tributadas no Mercado Interno e de Exportação </option>
+        <option value="56"> 56 = Operação com Direito a Crédito - Vinculada a Receitas Tributadas e Não-Tributadas no Mercado Interno, e de Exportação </option>
+        <option value="60"> 60 = Crédito Presumido - Operação de Aquisição Vinculada Exclusivamente a Receita Tributada no Mercado Interno </option>
+        <option value="61"> 61 = Crédito Presumido - Operação de Aquisição Vinculada Exclusivamente a Receita Não-Tributada no Mercado Interno </option>
+        <option value="62"> 62 = Crédito Presumido - Operação de Aquisição Vinculada Exclusivamente a Receita de Exportação </option>
+        <option value="63"> 63 = Crédito Presumido - Operação de Aquisição Vinculada a Receitas Tributadas e Não-Tributadas no Mercado Interno </option>
+        <option value="64"> 64 = Crédito Presumido - Operação de Aquisição Vinculada a Receitas Tributadas no Mercado Interno e de Exportação </option>
+        <option value="65"> 65 = Crédito Presumido - Operação de Aquisição Vinculada a Receitas Não-Tributadas no Mercado Interno e de Exportação </option>
+        <option value="66"> 66 = Crédito Presumido - Operação de Aquisição Vinculada a Receitas Tributadas e Não-Tributadas no Mercado Interno, e de Exportação </option>
+        <option value="67"> 67 = Crédito Presumido - Outras Operações </option>
+        <option value="70"> 70 = Operação de Aquisição sem Direito a Crédito </option>
+        <option value="71"> 71 = Operação de Aquisição com Isenção </option>
+        <option value="72"> 72 = Operação de Aquisição com Suspensão </option>
+        <option value="73"> 73 = Operação de Aquisição a Alíquota Zero </option>
+        <option value="74"> 74 = Operação de Aquisição; sem Incidência da Contribuição </option>
+        <option value="75"> 75 = Operação de Aquisição por Substituição Tributária </option>
+        <option value="98"> 98 = Outras Operações de Entrada </option>
+        <option value="99"> 99 = Outras Operações </option>
+
+        <!-- nProcesso -->
+        <option value="1"> 1 = Exigível </option>
+        <option value="2"> 2 = Não incidência </option>
+        <option value="3"> 3 = Isenção </option>
+        <option value="4"> 4 = Exportação </option>
+        <option value="5"> 5 = Imunidade </option>
+        <option value="6"> 6 = Exigibilidade Suspensa por Decisão Judicial </option>
+        <option value="7"> 7 = Exigibilidade Suspensa por Processo Administrativo </option>
+
+        <!-- indIncentivo -->
+        <option value="1"> 1 = Sim </option>
+        <option value="2"> 2 = Não </option>
+    </body>
+</html>
